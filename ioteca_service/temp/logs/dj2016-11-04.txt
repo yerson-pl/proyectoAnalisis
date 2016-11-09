@@ -1,0 +1,1793 @@
+[2016-11-04 06:56:26] DEBUG [django.db.backends:89] (0.004) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2016-11-04 06:56:26] DEBUG [django.db.backends:89] (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2016-11-04 06:56:37] WARNING [django.request:182] Not Found: /
+[2016-11-04 06:56:37] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': '', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'ioteca_service_apps.catalogo_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[2016-11-04 06:56:37] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': '', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'ioteca_service_apps.catalogo_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'U:\\\\taller\\\\initial_ioteca\\\\ve_asociacion\\\\lib\\\\site-packages\\\\django\\\\contrib\\\\admindocs\\\\urls.py'> (None:None) ^admin/doc/>"
+[2016-11-04 06:56:37] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': '', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'ioteca_service_apps.catalogo_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'rest_framework.urls' from 'U:\\\\taller\\\\initial_ioteca\\\\ve_asociacion\\\\lib\\\\site-packages\\\\rest_framework\\\\urls.py'> (rest_framework:rest_framework) ^api-auth/>"
+[2016-11-04 06:56:37] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': '', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'ioteca_service_apps.catalogo_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'oauth2_provider.urls' from 'U:\\\\taller\\\\initial_ioteca\\\\ve_asociacion\\\\lib\\\\site-packages\\\\oauth2_provider\\\\urls.py'> (None:oauth2_provider) ^o/>"
+[2016-11-04 06:56:37] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': '', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'ioteca_service_apps.catalogo_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from 'U:\\\\taller\\\\initial_ioteca\\\\ioteca_service\\\\ioteca_service_apps\\\\auths_api\\\\urls.py'> (None:None) ^api/auths/>"
+[2016-11-04 06:56:37] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': '', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'ioteca_service_apps.catalogo_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'ioteca_service_apps.catalogo_api.urls' from 'U:\\\\taller\\\\initial_ioteca\\\\ioteca_service\\\\ioteca_service_apps\\\\catalogo_api\\\\urls.py'> (None:None) ^api/catalogo/>"
+[2016-11-04 06:56:37] WARNING [django.request:182] Not Found: /favicon.ico
+[2016-11-04 06:56:37] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'ioteca_service_apps.catalogo_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[2016-11-04 06:56:37] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'ioteca_service_apps.catalogo_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'U:\\\\taller\\\\initial_ioteca\\\\ve_asociacion\\\\lib\\\\site-packages\\\\django\\\\contrib\\\\admindocs\\\\urls.py'> (None:None) ^admin/doc/>"
+[2016-11-04 06:56:37] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'ioteca_service_apps.catalogo_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'rest_framework.urls' from 'U:\\\\taller\\\\initial_ioteca\\\\ve_asociacion\\\\lib\\\\site-packages\\\\rest_framework\\\\urls.py'> (rest_framework:rest_framework) ^api-auth/>"
+[2016-11-04 06:56:37] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'ioteca_service_apps.catalogo_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'oauth2_provider.urls' from 'U:\\\\taller\\\\initial_ioteca\\\\ve_asociacion\\\\lib\\\\site-packages\\\\oauth2_provider\\\\urls.py'> (None:oauth2_provider) ^o/>"
+[2016-11-04 06:56:37] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'ioteca_service_apps.catalogo_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from 'U:\\\\taller\\\\initial_ioteca\\\\ioteca_service\\\\ioteca_service_apps\\\\auths_api\\\\urls.py'> (None:None) ^api/auths/>"
+[2016-11-04 06:56:37] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'ioteca_service_apps.catalogo_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'ioteca_service_apps.catalogo_api.urls' from 'U:\\\\taller\\\\initial_ioteca\\\\ioteca_service\\\\ioteca_service_apps\\\\catalogo_api\\\\urls.py'> (None:None) ^api/catalogo/>"
+[2016-11-04 06:59:06] DEBUG [django.db.backends:89] (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2016-11-04 06:59:06] DEBUG [django.db.backends:89] (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2016-11-04 06:59:12] DEBUG [django.db.backends:89] (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2016-11-04 06:59:12] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2016-11-04 06:59:17] WARNING [django.request:182] Not Found: /
+[2016-11-04 06:59:17] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'ioteca_service_apps.catalogo_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>], [<RegexURLResolver <module 'ioteca_service_apps.eventos_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\eventos_api\\urls.py'> (None:None) ^api/eventos/>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[2016-11-04 06:59:17] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'ioteca_service_apps.catalogo_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>], [<RegexURLResolver <module 'ioteca_service_apps.eventos_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\eventos_api\\urls.py'> (None:None) ^api/eventos/>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'U:\\\\taller\\\\initial_ioteca\\\\ve_asociacion\\\\lib\\\\site-packages\\\\django\\\\contrib\\\\admindocs\\\\urls.py'> (None:None) ^admin/doc/>"
+[2016-11-04 06:59:17] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'ioteca_service_apps.catalogo_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>], [<RegexURLResolver <module 'ioteca_service_apps.eventos_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\eventos_api\\urls.py'> (None:None) ^api/eventos/>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'rest_framework.urls' from 'U:\\\\taller\\\\initial_ioteca\\\\ve_asociacion\\\\lib\\\\site-packages\\\\rest_framework\\\\urls.py'> (rest_framework:rest_framework) ^api-auth/>"
+[2016-11-04 06:59:17] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'ioteca_service_apps.catalogo_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>], [<RegexURLResolver <module 'ioteca_service_apps.eventos_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\eventos_api\\urls.py'> (None:None) ^api/eventos/>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'oauth2_provider.urls' from 'U:\\\\taller\\\\initial_ioteca\\\\ve_asociacion\\\\lib\\\\site-packages\\\\oauth2_provider\\\\urls.py'> (None:oauth2_provider) ^o/>"
+[2016-11-04 06:59:17] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'ioteca_service_apps.catalogo_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>], [<RegexURLResolver <module 'ioteca_service_apps.eventos_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\eventos_api\\urls.py'> (None:None) ^api/eventos/>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from 'U:\\\\taller\\\\initial_ioteca\\\\ioteca_service\\\\ioteca_service_apps\\\\auths_api\\\\urls.py'> (None:None) ^api/auths/>"
+[2016-11-04 06:59:17] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'ioteca_service_apps.catalogo_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>], [<RegexURLResolver <module 'ioteca_service_apps.eventos_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\eventos_api\\urls.py'> (None:None) ^api/eventos/>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'ioteca_service_apps.catalogo_api.urls' from 'U:\\\\taller\\\\initial_ioteca\\\\ioteca_service\\\\ioteca_service_apps\\\\catalogo_api\\\\urls.py'> (None:None) ^api/catalogo/>"
+[2016-11-04 06:59:17] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'U:\\taller\\initial_ioteca\\ve_asociacion\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'ioteca_service_apps.catalogo_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>], [<RegexURLResolver <module 'ioteca_service_apps.eventos_api.urls' from 'U:\\taller\\initial_ioteca\\ioteca_service\\ioteca_service_apps\\eventos_api\\urls.py'> (None:None) ^api/eventos/>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'ioteca_service_apps.eventos_api.urls' from 'U:\\\\taller\\\\initial_ioteca\\\\ioteca_service\\\\ioteca_service_apps\\\\eventos_api\\\\urls.py'> (None:None) ^api/eventos/>"
+[2016-11-04 06:59:22] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-11-04 11:59:22.369084' AND "django_session"."session_key" = 'o8nnabr9c35d8vuasnyqkk55b2fe5two'); args=('2016-11-04 11:59:22.369084', 'o8nnabr9c35d8vuasnyqkk55b2fe5two')
+[2016-11-04 06:59:22] DEBUG [django.db.backends:89] (0.000) SELECT "auths_user"."password", "auths_user"."last_login", "auths_user"."is_superuser", "auths_user"."username", "auths_user"."first_name", "auths_user"."last_name", "auths_user"."email", "auths_user"."is_staff", "auths_user"."is_active", "auths_user"."date_joined", "auths_user"."id", "auths_user"."last_hierarchy_id", "auths_user"."last_module_id", "auths_user"."person_id", "auths_user"."updated_at", "auths_user"."registered_by" FROM "auths_user" WHERE "auths_user"."id" = '98c929be19fb4598b30233dd1ddbfcfd'; args=('98c929be19fb4598b30233dd1ddbfcfd',)
+[2016-11-04 06:59:22] DEBUG [django.template:927] Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'False': False, 'True': True, 'None': None}, {'DEFAULT_MESSAGE_LEVELS': {'WARNING': 30, 'DEBUG': 10, 'INFO': 20, 'ERROR': 40, 'SUCCESS': 25}, 'request': <WSGIRequest: GET '/admin/'>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x000001E7E09FDD90>>, 'user': <SimpleLazyObject: <User: admin>>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000001E7E09CC710>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000001E7E0ADAF98>}, {}, {'site_header': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7DF781358>, 'LANGUAGE_CODE': 'en-us', 'site_title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7DF7812B0>, 'LANGUAGE_BIDI': False, 'app_list': [{'name': 'Asociacion', 'app_label': 'asociacion', 'models': [{'admin_url': '/admin/asociacion/informacionlote/', 'name': 'InformacionLotes', 'object_name': 'InformacionLote', 'add_url': '/admin/asociacion/informacionlote/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/asociacion/lote/', 'name': 'Lotes', 'object_name': 'Lote', 'add_url': '/admin/asociacion/lote/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/asociacion/manzana/', 'name': 'Manzanas', 'object_name': 'Manzana', 'add_url': '/admin/asociacion/manzana/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/asociacion/sociolote/', 'name': 'SocioLotes', 'object_name': 'SocioLote', 'add_url': '/admin/asociacion/sociolote/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/asociacion/socio/', 'name': 'Socios', 'object_name': 'Socio', 'add_url': '/admin/asociacion/socio/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/asociacion/', 'has_module_perms': True}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7DF781E10>, 'app_label': 'auth', 'models': [{'admin_url': '/admin/auth/group/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB14E0>, 'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auth/permission/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB12E8>, 'object_name': 'Permission', 'add_url': '/admin/auth/permission/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/auth/', 'has_module_perms': True}, {'name': 'Auths', 'app_label': 'auths', 'models': [{'admin_url': '/admin/auths/hierarchytype/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E09B5DD8>, 'object_name': 'HierarchyType', 'add_url': '/admin/auths/hierarchytype/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auths/hierarchy/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1390>, 'object_name': 'Hierarchy', 'add_url': '/admin/auths/hierarchy/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auths/menu/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0A9F390>, 'object_name': 'Menu', 'add_url': '/admin/auths/menu/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auths/person/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1240>, 'object_name': 'Person', 'add_url': '/admin/auths/person/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auths/userhierarchygroup/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB14A8>, 'object_name': 'UserHierarchyGroup', 'add_url': '/admin/auths/userhierarchygroup/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auths/userhierarchypermission/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1358>, 'object_name': 'UserHierarchyPermission', 'add_url': '/admin/auths/userhierarchypermission/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auths/user/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB15C0>, 'object_name': 'User', 'add_url': '/admin/auths/user/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/auths/', 'has_module_perms': True}, {'name': 'Catalogo', 'app_label': 'catalogo', 'models': [{'admin_url': '/admin/catalogo/autor/', 'name': 'Autores', 'object_name': 'Autor', 'add_url': '/admin/catalogo/autor/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/catalogo/categoria/', 'name': 'Categorias', 'object_name': 'Categoria', 'add_url': '/admin/catalogo/categoria/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/catalogo/libro/', 'name': 'Libros', 'object_name': 'Libro', 'add_url': '/admin/catalogo/libro/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/catalogo/', 'has_module_perms': True}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7DF789550>, 'app_label': 'contenttypes', 'models': [{'admin_url': '/admin/contenttypes/contenttype/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB12B0>, 'object_name': 'ContentType', 'add_url': '/admin/contenttypes/contenttype/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/contenttypes/', 'has_module_perms': True}, {'name': 'Django OAuth Toolkit', 'app_label': 'oauth2_provider', 'models': [{'admin_url': '/admin/oauth2_provider/accesstoken/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1400>, 'object_name': 'AccessToken', 'add_url': '/admin/oauth2_provider/accesstoken/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/oauth2_provider/application/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0A30B00>, 'object_name': 'Application', 'add_url': '/admin/oauth2_provider/application/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/oauth2_provider/grant/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1438>, 'object_name': 'Grant', 'add_url': '/admin/oauth2_provider/grant/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/oauth2_provider/refreshtoken/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1470>, 'object_name': 'RefreshToken', 'add_url': '/admin/oauth2_provider/refreshtoken/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/oauth2_provider/', 'has_module_perms': True}, {'name': 'Eventos', 'app_label': 'eventos', 'models': [{'admin_url': '/admin/eventos/asistencia/', 'name': 'Asistencias', 'object_name': 'Asistencia', 'add_url': '/admin/eventos/asistencia/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/eventos/evento/', 'name': 'Eventos', 'object_name': 'Evento', 'add_url': '/admin/eventos/evento/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/eventos/inasistencia/', 'name': 'Inasistencias', 'object_name': 'Inasistencia', 'add_url': '/admin/eventos/inasistencia/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/eventos/', 'has_module_perms': True}, {'name': 'Pagos', 'app_label': 'pagos', 'models': [{'admin_url': '/admin/pagos/pago/', 'name': 'Pagos', 'object_name': 'Pago', 'add_url': '/admin/pagos/pago/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/pagos/periodo/', 'name': 'Periodos', 'object_name': 'Periodo', 'add_url': '/admin/pagos/periodo/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/pagos/', 'has_module_perms': True}], 'title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7DF7817B8>, 'available_apps': [{'name': 'Asociacion', 'app_label': 'asociacion', 'models': [{'admin_url': '/admin/asociacion/informacionlote/', 'name': 'InformacionLotes', 'object_name': 'InformacionLote', 'add_url': '/admin/asociacion/informacionlote/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/asociacion/lote/', 'name': 'Lotes', 'object_name': 'Lote', 'add_url': '/admin/asociacion/lote/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/asociacion/manzana/', 'name': 'Manzanas', 'object_name': 'Manzana', 'add_url': '/admin/asociacion/manzana/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/asociacion/sociolote/', 'name': 'SocioLotes', 'object_name': 'SocioLote', 'add_url': '/admin/asociacion/sociolote/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/asociacion/socio/', 'name': 'Socios', 'object_name': 'Socio', 'add_url': '/admin/asociacion/socio/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/asociacion/', 'has_module_perms': True}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7DF781E10>, 'app_label': 'auth', 'models': [{'admin_url': '/admin/auth/group/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1B00>, 'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auth/permission/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB19E8>, 'object_name': 'Permission', 'add_url': '/admin/auth/permission/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/auth/', 'has_module_perms': True}, {'name': 'Auths', 'app_label': 'auths', 'models': [{'admin_url': '/admin/auths/hierarchytype/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1550>, 'object_name': 'HierarchyType', 'add_url': '/admin/auths/hierarchytype/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auths/hierarchy/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1A58>, 'object_name': 'Hierarchy', 'add_url': '/admin/auths/hierarchy/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auths/menu/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB18D0>, 'object_name': 'Menu', 'add_url': '/admin/auths/menu/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auths/person/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1908>, 'object_name': 'Person', 'add_url': '/admin/auths/person/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auths/userhierarchygroup/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1C50>, 'object_name': 'UserHierarchyGroup', 'add_url': '/admin/auths/userhierarchygroup/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auths/userhierarchypermission/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1A20>, 'object_name': 'UserHierarchyPermission', 'add_url': '/admin/auths/userhierarchypermission/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auths/user/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1CF8>, 'object_name': 'User', 'add_url': '/admin/auths/user/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/auths/', 'has_module_perms': True}, {'name': 'Catalogo', 'app_label': 'catalogo', 'models': [{'admin_url': '/admin/catalogo/autor/', 'name': 'Autores', 'object_name': 'Autor', 'add_url': '/admin/catalogo/autor/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/catalogo/categoria/', 'name': 'Categorias', 'object_name': 'Categoria', 'add_url': '/admin/catalogo/categoria/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/catalogo/libro/', 'name': 'Libros', 'object_name': 'Libro', 'add_url': '/admin/catalogo/libro/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/catalogo/', 'has_module_perms': True}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7DF789550>, 'app_label': 'contenttypes', 'models': [{'admin_url': '/admin/contenttypes/contenttype/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1940>, 'object_name': 'ContentType', 'add_url': '/admin/contenttypes/contenttype/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/contenttypes/', 'has_module_perms': True}, {'name': 'Django OAuth Toolkit', 'app_label': 'oauth2_provider', 'models': [{'admin_url': '/admin/oauth2_provider/accesstoken/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1AC8>, 'object_name': 'AccessToken', 'add_url': '/admin/oauth2_provider/accesstoken/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/oauth2_provider/application/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1860>, 'object_name': 'Application', 'add_url': '/admin/oauth2_provider/application/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/oauth2_provider/grant/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1B70>, 'object_name': 'Grant', 'add_url': '/admin/oauth2_provider/grant/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/oauth2_provider/refreshtoken/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1BE0>, 'object_name': 'RefreshToken', 'add_url': '/admin/oauth2_provider/refreshtoken/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/oauth2_provider/', 'has_module_perms': True}, {'name': 'Eventos', 'app_label': 'eventos', 'models': [{'admin_url': '/admin/eventos/asistencia/', 'name': 'Asistencias', 'object_name': 'Asistencia', 'add_url': '/admin/eventos/asistencia/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/eventos/evento/', 'name': 'Eventos', 'object_name': 'Evento', 'add_url': '/admin/eventos/evento/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/eventos/inasistencia/', 'name': 'Inasistencias', 'object_name': 'Inasistencia', 'add_url': '/admin/eventos/inasistencia/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/eventos/', 'has_module_perms': True}, {'name': 'Pagos', 'app_label': 'pagos', 'models': [{'admin_url': '/admin/pagos/pago/', 'name': 'Pagos', 'object_name': 'Pago', 'add_url': '/admin/pagos/pago/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/pagos/periodo/', 'name': 'Periodos', 'object_name': 'Periodo', 'add_url': '/admin/pagos/periodo/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/pagos/', 'has_module_perms': True}], 'site_url': '/', 'has_permission': True}]"
+[2016-11-04 06:59:22] DEBUG [django.template:927] Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'False': False, 'True': True, 'None': None}, {'DEFAULT_MESSAGE_LEVELS': {'WARNING': 30, 'DEBUG': 10, 'INFO': 20, 'ERROR': 40, 'SUCCESS': 25}, 'request': <WSGIRequest: GET '/admin/'>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x000001E7E09FDD90>>, 'user': <SimpleLazyObject: <User: admin>>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000001E7E09CC710>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000001E7E0ADAF98>}, {}, {'site_header': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7DF781358>, 'LANGUAGE_CODE': 'en-us', 'site_title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7DF7812B0>, 'LANGUAGE_BIDI': False, 'app_list': [{'name': 'Asociacion', 'app_label': 'asociacion', 'models': [{'admin_url': '/admin/asociacion/informacionlote/', 'name': 'InformacionLotes', 'object_name': 'InformacionLote', 'add_url': '/admin/asociacion/informacionlote/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/asociacion/lote/', 'name': 'Lotes', 'object_name': 'Lote', 'add_url': '/admin/asociacion/lote/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/asociacion/manzana/', 'name': 'Manzanas', 'object_name': 'Manzana', 'add_url': '/admin/asociacion/manzana/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/asociacion/sociolote/', 'name': 'SocioLotes', 'object_name': 'SocioLote', 'add_url': '/admin/asociacion/sociolote/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/asociacion/socio/', 'name': 'Socios', 'object_name': 'Socio', 'add_url': '/admin/asociacion/socio/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/asociacion/', 'has_module_perms': True}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7DF781E10>, 'app_label': 'auth', 'models': [{'admin_url': '/admin/auth/group/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB14E0>, 'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auth/permission/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB12E8>, 'object_name': 'Permission', 'add_url': '/admin/auth/permission/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/auth/', 'has_module_perms': True}, {'name': 'Auths', 'app_label': 'auths', 'models': [{'admin_url': '/admin/auths/hierarchytype/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E09B5DD8>, 'object_name': 'HierarchyType', 'add_url': '/admin/auths/hierarchytype/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auths/hierarchy/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1390>, 'object_name': 'Hierarchy', 'add_url': '/admin/auths/hierarchy/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auths/menu/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0A9F390>, 'object_name': 'Menu', 'add_url': '/admin/auths/menu/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auths/person/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1240>, 'object_name': 'Person', 'add_url': '/admin/auths/person/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auths/userhierarchygroup/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB14A8>, 'object_name': 'UserHierarchyGroup', 'add_url': '/admin/auths/userhierarchygroup/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auths/userhierarchypermission/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1358>, 'object_name': 'UserHierarchyPermission', 'add_url': '/admin/auths/userhierarchypermission/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auths/user/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB15C0>, 'object_name': 'User', 'add_url': '/admin/auths/user/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/auths/', 'has_module_perms': True}, {'name': 'Catalogo', 'app_label': 'catalogo', 'models': [{'admin_url': '/admin/catalogo/autor/', 'name': 'Autores', 'object_name': 'Autor', 'add_url': '/admin/catalogo/autor/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/catalogo/categoria/', 'name': 'Categorias', 'object_name': 'Categoria', 'add_url': '/admin/catalogo/categoria/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/catalogo/libro/', 'name': 'Libros', 'object_name': 'Libro', 'add_url': '/admin/catalogo/libro/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/catalogo/', 'has_module_perms': True}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7DF789550>, 'app_label': 'contenttypes', 'models': [{'admin_url': '/admin/contenttypes/contenttype/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB12B0>, 'object_name': 'ContentType', 'add_url': '/admin/contenttypes/contenttype/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/contenttypes/', 'has_module_perms': True}, {'name': 'Django OAuth Toolkit', 'app_label': 'oauth2_provider', 'models': [{'admin_url': '/admin/oauth2_provider/accesstoken/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1400>, 'object_name': 'AccessToken', 'add_url': '/admin/oauth2_provider/accesstoken/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/oauth2_provider/application/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0A30B00>, 'object_name': 'Application', 'add_url': '/admin/oauth2_provider/application/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/oauth2_provider/grant/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1438>, 'object_name': 'Grant', 'add_url': '/admin/oauth2_provider/grant/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/oauth2_provider/refreshtoken/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1470>, 'object_name': 'RefreshToken', 'add_url': '/admin/oauth2_provider/refreshtoken/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/oauth2_provider/', 'has_module_perms': True}, {'name': 'Eventos', 'app_label': 'eventos', 'models': [{'admin_url': '/admin/eventos/asistencia/', 'name': 'Asistencias', 'object_name': 'Asistencia', 'add_url': '/admin/eventos/asistencia/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/eventos/evento/', 'name': 'Eventos', 'object_name': 'Evento', 'add_url': '/admin/eventos/evento/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/eventos/inasistencia/', 'name': 'Inasistencias', 'object_name': 'Inasistencia', 'add_url': '/admin/eventos/inasistencia/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/eventos/', 'has_module_perms': True}, {'name': 'Pagos', 'app_label': 'pagos', 'models': [{'admin_url': '/admin/pagos/pago/', 'name': 'Pagos', 'object_name': 'Pago', 'add_url': '/admin/pagos/pago/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/pagos/periodo/', 'name': 'Periodos', 'object_name': 'Periodo', 'add_url': '/admin/pagos/periodo/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/pagos/', 'has_module_perms': True}], 'title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7DF7817B8>, 'available_apps': [{'name': 'Asociacion', 'app_label': 'asociacion', 'models': [{'admin_url': '/admin/asociacion/informacionlote/', 'name': 'InformacionLotes', 'object_name': 'InformacionLote', 'add_url': '/admin/asociacion/informacionlote/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/asociacion/lote/', 'name': 'Lotes', 'object_name': 'Lote', 'add_url': '/admin/asociacion/lote/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/asociacion/manzana/', 'name': 'Manzanas', 'object_name': 'Manzana', 'add_url': '/admin/asociacion/manzana/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/asociacion/sociolote/', 'name': 'SocioLotes', 'object_name': 'SocioLote', 'add_url': '/admin/asociacion/sociolote/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/asociacion/socio/', 'name': 'Socios', 'object_name': 'Socio', 'add_url': '/admin/asociacion/socio/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/asociacion/', 'has_module_perms': True}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7DF781E10>, 'app_label': 'auth', 'models': [{'admin_url': '/admin/auth/group/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1B00>, 'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auth/permission/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB19E8>, 'object_name': 'Permission', 'add_url': '/admin/auth/permission/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/auth/', 'has_module_perms': True}, {'name': 'Auths', 'app_label': 'auths', 'models': [{'admin_url': '/admin/auths/hierarchytype/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1550>, 'object_name': 'HierarchyType', 'add_url': '/admin/auths/hierarchytype/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auths/hierarchy/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1A58>, 'object_name': 'Hierarchy', 'add_url': '/admin/auths/hierarchy/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auths/menu/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB18D0>, 'object_name': 'Menu', 'add_url': '/admin/auths/menu/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auths/person/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1908>, 'object_name': 'Person', 'add_url': '/admin/auths/person/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auths/userhierarchygroup/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1C50>, 'object_name': 'UserHierarchyGroup', 'add_url': '/admin/auths/userhierarchygroup/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auths/userhierarchypermission/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1A20>, 'object_name': 'UserHierarchyPermission', 'add_url': '/admin/auths/userhierarchypermission/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/auths/user/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1CF8>, 'object_name': 'User', 'add_url': '/admin/auths/user/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/auths/', 'has_module_perms': True}, {'name': 'Catalogo', 'app_label': 'catalogo', 'models': [{'admin_url': '/admin/catalogo/autor/', 'name': 'Autores', 'object_name': 'Autor', 'add_url': '/admin/catalogo/autor/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/catalogo/categoria/', 'name': 'Categorias', 'object_name': 'Categoria', 'add_url': '/admin/catalogo/categoria/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/catalogo/libro/', 'name': 'Libros', 'object_name': 'Libro', 'add_url': '/admin/catalogo/libro/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/catalogo/', 'has_module_perms': True}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7DF789550>, 'app_label': 'contenttypes', 'models': [{'admin_url': '/admin/contenttypes/contenttype/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1940>, 'object_name': 'ContentType', 'add_url': '/admin/contenttypes/contenttype/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/contenttypes/', 'has_module_perms': True}, {'name': 'Django OAuth Toolkit', 'app_label': 'oauth2_provider', 'models': [{'admin_url': '/admin/oauth2_provider/accesstoken/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1AC8>, 'object_name': 'AccessToken', 'add_url': '/admin/oauth2_provider/accesstoken/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/oauth2_provider/application/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1860>, 'object_name': 'Application', 'add_url': '/admin/oauth2_provider/application/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/oauth2_provider/grant/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1B70>, 'object_name': 'Grant', 'add_url': '/admin/oauth2_provider/grant/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/oauth2_provider/refreshtoken/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000001E7E0AB1BE0>, 'object_name': 'RefreshToken', 'add_url': '/admin/oauth2_provider/refreshtoken/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/oauth2_provider/', 'has_module_perms': True}, {'name': 'Eventos', 'app_label': 'eventos', 'models': [{'admin_url': '/admin/eventos/asistencia/', 'name': 'Asistencias', 'object_name': 'Asistencia', 'add_url': '/admin/eventos/asistencia/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/eventos/evento/', 'name': 'Eventos', 'object_name': 'Evento', 'add_url': '/admin/eventos/evento/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/eventos/inasistencia/', 'name': 'Inasistencias', 'object_name': 'Inasistencia', 'add_url': '/admin/eventos/inasistencia/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/eventos/', 'has_module_perms': True}, {'name': 'Pagos', 'app_label': 'pagos', 'models': [{'admin_url': '/admin/pagos/pago/', 'name': 'Pagos', 'object_name': 'Pago', 'add_url': '/admin/pagos/pago/add/', 'perms': {'delete': True, 'change': True, 'add': True}}, {'admin_url': '/admin/pagos/periodo/', 'name': 'Periodos', 'object_name': 'Periodo', 'add_url': '/admin/pagos/periodo/add/', 'perms': {'delete': True, 'change': True, 'add': True}}], 'app_url': '/admin/pagos/', 'has_module_perms': True}], 'site_url': '/', 'has_permission': True}]"
+[2016-11-04 06:59:22] DEBUG [django.db.backends:89] (0.000) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "auths_user"."password", "auths_user"."last_login", "auths_user"."is_superuser", "auths_user"."username", "auths_user"."first_name", "auths_user"."last_name", "auths_user"."email", "auths_user"."is_staff", "auths_user"."is_active", "auths_user"."date_joined", "auths_user"."id", "auths_user"."last_hierarchy_id", "auths_user"."last_module_id", "auths_user"."person_id", "auths_user"."updated_at", "auths_user"."registered_by", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "auths_user" ON ("django_admin_log"."user_id" = "auths_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = '98c929be19fb4598b30233dd1ddbfcfd' ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=('98c929be19fb4598b30233dd1ddbfcfd',)
+[2016-11-04 07:03:40] DEBUG [django.db.backends:89] (0.003) SELECT "eventos_inasistencia"."id", "eventos_inasistencia"."creacion", "eventos_inasistencia"."modificacion", "eventos_inasistencia"."evento_id", "eventos_inasistencia"."socio_id", "eventos_inasistencia"."monto", "eventos_inasistencia"."num_inasistencias" FROM "eventos_inasistencia"; args=()
+[2016-11-04 07:03:40] DEBUG [django.template:927] Exception while resolving variable 'hide_label' in template 'rest_framework/horizontal/select.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [hide_label] in "{'base_template': 'select.html', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0AFB278>, 'template_pack': 'rest_framework/horizontal'}"
+[2016-11-04 07:03:40] DEBUG [django.template:927] Exception while resolving variable 'hide_label' in template 'rest_framework/horizontal/input.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [hide_label] in "{'base_template': 'input.html', 'input_type': 'number', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0AFB278>}"
+[2016-11-04 07:03:40] DEBUG [django.template:927] Exception while resolving variable 'placeholder' in template 'rest_framework/horizontal/input.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [placeholder] in "{'base_template': 'input.html', 'input_type': 'number', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0AFB278>}"
+[2016-11-04 07:03:40] DEBUG [django.template:927] Exception while resolving variable 'hide_label' in template 'rest_framework/horizontal/select.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [hide_label] in "{'base_template': 'select.html', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0AFB278>, 'template_pack': 'rest_framework/horizontal'}"
+[2016-11-04 07:03:40] DEBUG [django.template:927] Exception while resolving variable 'allow_blank' in template 'rest_framework/horizontal/select.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'BoundField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\rest_framework\utils\serializer_helpers.py", line 69, in __getattr__
+    return getattr(self._field, attr_name)
+AttributeError: 'PrimaryKeyRelatedField' object has no attribute 'allow_blank'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'allow_blank'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [allow_blank] in '<BoundField value= errors=None>'
+[2016-11-04 07:03:40] DEBUG [django.db.backends:89] (0.000) SELECT "eventos_evento"."id", "eventos_evento"."creacion", "eventos_evento"."modificacion", "eventos_evento"."nombre", "eventos_evento"."fecha", "eventos_evento"."hora" FROM "eventos_evento"; args=()
+[2016-11-04 07:03:40] DEBUG [django.template:927] Exception while resolving variable 'hide_label' in template 'rest_framework/horizontal/select.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [hide_label] in "{'base_template': 'select.html', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0AFB278>, 'template_pack': 'rest_framework/horizontal'}"
+[2016-11-04 07:03:40] DEBUG [django.template:927] Exception while resolving variable 'allow_blank' in template 'rest_framework/horizontal/select.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'BoundField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\rest_framework\utils\serializer_helpers.py", line 69, in __getattr__
+    return getattr(self._field, attr_name)
+AttributeError: 'PrimaryKeyRelatedField' object has no attribute 'allow_blank'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'allow_blank'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [allow_blank] in '<BoundField value= errors=None>'
+[2016-11-04 07:03:40] DEBUG [django.db.backends:89] (0.001) SELECT "asociacion_lote"."socio_id", "asociacion_lote"."id", "asociacion_lote"."manzana_id", "asociacion_lote"."item", "asociacion_lote"."lote", "asociacion_lote"."estado" FROM "asociacion_lote"; args=()
+[2016-11-04 07:03:40] DEBUG [django.db.backends:89] (0.000) SELECT "asociacion_manzana"."id", "asociacion_manzana"."manzana" FROM "asociacion_manzana" WHERE "asociacion_manzana"."id" = '42b591036fd549bfa17a39206841eb1e'; args=('42b591036fd549bfa17a39206841eb1e',)
+[2016-11-04 07:03:40] DEBUG [django.db.backends:89] (0.000) SELECT "asociacion_manzana"."id", "asociacion_manzana"."manzana" FROM "asociacion_manzana" WHERE "asociacion_manzana"."id" = '42b591036fd549bfa17a39206841eb1e'; args=('42b591036fd549bfa17a39206841eb1e',)
+[2016-11-04 07:03:40] DEBUG [django.db.backends:89] (0.000) SELECT "asociacion_manzana"."id", "asociacion_manzana"."manzana" FROM "asociacion_manzana" WHERE "asociacion_manzana"."id" = '42b591036fd549bfa17a39206841eb1e'; args=('42b591036fd549bfa17a39206841eb1e',)
+[2016-11-04 07:04:34] DEBUG [django.db.backends:89] (0.003) SELECT "eventos_evento"."id", "eventos_evento"."creacion", "eventos_evento"."modificacion", "eventos_evento"."nombre", "eventos_evento"."fecha", "eventos_evento"."hora" FROM "eventos_evento" WHERE "eventos_evento"."id" = 3; args=(3,)
+[2016-11-04 07:04:34] DEBUG [django.db.backends:89] (0.000) SELECT "asociacion_lote"."socio_id", "asociacion_lote"."id", "asociacion_lote"."manzana_id", "asociacion_lote"."item", "asociacion_lote"."lote", "asociacion_lote"."estado" FROM "asociacion_lote" WHERE "asociacion_lote"."id" = '5614171f8e99451d98001b6a9c888152'; args=('5614171f8e99451d98001b6a9c888152',)
+[2016-11-04 07:04:34] DEBUG [django.db.backends:89] (0.001) BEGIN; args=None
+[2016-11-04 07:04:34] DEBUG [django.db.backends:89] (0.019) INSERT INTO "eventos_inasistencia" ("creacion", "modificacion", "evento_id", "socio_id", "monto", "num_inasistencias") VALUES ('2016-11-04 12:04:34.230260', '2016-11-04', 3, '5614171f8e99451d98001b6a9c888152', '20', 2); args=['2016-11-04 12:04:34.230260', '2016-11-04', 3, '5614171f8e99451d98001b6a9c888152', '20', 2]
+[2016-11-04 07:04:34] DEBUG [django.template:927] Exception while resolving variable 'hide_label' in template 'rest_framework/horizontal/select.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [hide_label] in "{'base_template': 'select.html', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0B2FD68>, 'template_pack': 'rest_framework/horizontal'}"
+[2016-11-04 07:04:34] DEBUG [django.template:927] Exception while resolving variable 'hide_label' in template 'rest_framework/horizontal/input.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [hide_label] in "{'base_template': 'input.html', 'input_type': 'number', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0B2FD68>}"
+[2016-11-04 07:04:34] DEBUG [django.template:927] Exception while resolving variable 'placeholder' in template 'rest_framework/horizontal/input.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [placeholder] in "{'base_template': 'input.html', 'input_type': 'number', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0B2FD68>}"
+[2016-11-04 07:04:34] DEBUG [django.template:927] Exception while resolving variable 'hide_label' in template 'rest_framework/horizontal/select.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [hide_label] in "{'base_template': 'select.html', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0B2FD68>, 'template_pack': 'rest_framework/horizontal'}"
+[2016-11-04 07:04:34] DEBUG [django.template:927] Exception while resolving variable 'allow_blank' in template 'rest_framework/horizontal/select.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'BoundField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\rest_framework\utils\serializer_helpers.py", line 69, in __getattr__
+    return getattr(self._field, attr_name)
+AttributeError: 'PrimaryKeyRelatedField' object has no attribute 'allow_blank'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'allow_blank'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [allow_blank] in '<BoundField value=3 errors=None>'
+[2016-11-04 07:04:34] DEBUG [django.db.backends:89] (0.000) SELECT "eventos_evento"."id", "eventos_evento"."creacion", "eventos_evento"."modificacion", "eventos_evento"."nombre", "eventos_evento"."fecha", "eventos_evento"."hora" FROM "eventos_evento"; args=()
+[2016-11-04 07:04:34] DEBUG [django.template:927] Exception while resolving variable 'hide_label' in template 'rest_framework/horizontal/select.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [hide_label] in "{'base_template': 'select.html', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0B2FD68>, 'template_pack': 'rest_framework/horizontal'}"
+[2016-11-04 07:04:34] DEBUG [django.template:927] Exception while resolving variable 'allow_blank' in template 'rest_framework/horizontal/select.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'BoundField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\rest_framework\utils\serializer_helpers.py", line 69, in __getattr__
+    return getattr(self._field, attr_name)
+AttributeError: 'PrimaryKeyRelatedField' object has no attribute 'allow_blank'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'allow_blank'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [allow_blank] in '<BoundField value=5614171f-8e99-451d-9800-1b6a9c888152 errors=None>'
+[2016-11-04 07:04:34] DEBUG [django.db.backends:89] (0.000) SELECT "asociacion_lote"."socio_id", "asociacion_lote"."id", "asociacion_lote"."manzana_id", "asociacion_lote"."item", "asociacion_lote"."lote", "asociacion_lote"."estado" FROM "asociacion_lote"; args=()
+[2016-11-04 07:04:34] DEBUG [django.db.backends:89] (0.000) SELECT "asociacion_manzana"."id", "asociacion_manzana"."manzana" FROM "asociacion_manzana" WHERE "asociacion_manzana"."id" = '42b591036fd549bfa17a39206841eb1e'; args=('42b591036fd549bfa17a39206841eb1e',)
+[2016-11-04 07:04:34] DEBUG [django.db.backends:89] (0.000) SELECT "asociacion_manzana"."id", "asociacion_manzana"."manzana" FROM "asociacion_manzana" WHERE "asociacion_manzana"."id" = '42b591036fd549bfa17a39206841eb1e'; args=('42b591036fd549bfa17a39206841eb1e',)
+[2016-11-04 07:04:34] DEBUG [django.db.backends:89] (0.000) SELECT "asociacion_manzana"."id", "asociacion_manzana"."manzana" FROM "asociacion_manzana" WHERE "asociacion_manzana"."id" = '42b591036fd549bfa17a39206841eb1e'; args=('42b591036fd549bfa17a39206841eb1e',)
+[2016-11-04 07:04:52] DEBUG [django.db.backends:89] (0.003) SELECT "eventos_inasistencia"."id", "eventos_inasistencia"."creacion", "eventos_inasistencia"."modificacion", "eventos_inasistencia"."evento_id", "eventos_inasistencia"."socio_id", "eventos_inasistencia"."monto", "eventos_inasistencia"."num_inasistencias" FROM "eventos_inasistencia"; args=()
+[2016-11-04 07:04:52] DEBUG [django.template:927] Exception while resolving variable 'hide_label' in template 'rest_framework/horizontal/select.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [hide_label] in "{'base_template': 'select.html', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E09D1A20>, 'template_pack': 'rest_framework/horizontal'}"
+[2016-11-04 07:04:52] DEBUG [django.template:927] Exception while resolving variable 'hide_label' in template 'rest_framework/horizontal/input.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [hide_label] in "{'base_template': 'input.html', 'input_type': 'number', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E09D1A20>}"
+[2016-11-04 07:04:52] DEBUG [django.template:927] Exception while resolving variable 'placeholder' in template 'rest_framework/horizontal/input.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [placeholder] in "{'base_template': 'input.html', 'input_type': 'number', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E09D1A20>}"
+[2016-11-04 07:04:52] DEBUG [django.template:927] Exception while resolving variable 'hide_label' in template 'rest_framework/horizontal/select.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [hide_label] in "{'base_template': 'select.html', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E09D1A20>, 'template_pack': 'rest_framework/horizontal'}"
+[2016-11-04 07:04:52] DEBUG [django.template:927] Exception while resolving variable 'allow_blank' in template 'rest_framework/horizontal/select.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'BoundField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\rest_framework\utils\serializer_helpers.py", line 69, in __getattr__
+    return getattr(self._field, attr_name)
+AttributeError: 'PrimaryKeyRelatedField' object has no attribute 'allow_blank'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'allow_blank'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [allow_blank] in '<BoundField value= errors=None>'
+[2016-11-04 07:04:52] DEBUG [django.db.backends:89] (0.000) SELECT "eventos_evento"."id", "eventos_evento"."creacion", "eventos_evento"."modificacion", "eventos_evento"."nombre", "eventos_evento"."fecha", "eventos_evento"."hora" FROM "eventos_evento"; args=()
+[2016-11-04 07:04:52] DEBUG [django.template:927] Exception while resolving variable 'hide_label' in template 'rest_framework/horizontal/select.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [hide_label] in "{'base_template': 'select.html', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E09D1A20>, 'template_pack': 'rest_framework/horizontal'}"
+[2016-11-04 07:04:52] DEBUG [django.template:927] Exception while resolving variable 'allow_blank' in template 'rest_framework/horizontal/select.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'BoundField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\rest_framework\utils\serializer_helpers.py", line 69, in __getattr__
+    return getattr(self._field, attr_name)
+AttributeError: 'PrimaryKeyRelatedField' object has no attribute 'allow_blank'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'allow_blank'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [allow_blank] in '<BoundField value= errors=None>'
+[2016-11-04 07:04:52] DEBUG [django.db.backends:89] (0.000) SELECT "asociacion_lote"."socio_id", "asociacion_lote"."id", "asociacion_lote"."manzana_id", "asociacion_lote"."item", "asociacion_lote"."lote", "asociacion_lote"."estado" FROM "asociacion_lote"; args=()
+[2016-11-04 07:04:52] DEBUG [django.db.backends:89] (0.000) SELECT "asociacion_manzana"."id", "asociacion_manzana"."manzana" FROM "asociacion_manzana" WHERE "asociacion_manzana"."id" = '42b591036fd549bfa17a39206841eb1e'; args=('42b591036fd549bfa17a39206841eb1e',)
+[2016-11-04 07:04:52] DEBUG [django.db.backends:89] (0.000) SELECT "asociacion_manzana"."id", "asociacion_manzana"."manzana" FROM "asociacion_manzana" WHERE "asociacion_manzana"."id" = '42b591036fd549bfa17a39206841eb1e'; args=('42b591036fd549bfa17a39206841eb1e',)
+[2016-11-04 07:04:52] DEBUG [django.db.backends:89] (0.000) SELECT "asociacion_manzana"."id", "asociacion_manzana"."manzana" FROM "asociacion_manzana" WHERE "asociacion_manzana"."id" = '42b591036fd549bfa17a39206841eb1e'; args=('42b591036fd549bfa17a39206841eb1e',)
+[2016-11-04 07:05:39] DEBUG [django.db.backends:89] (0.002) SELECT "eventos_evento"."id", "eventos_evento"."creacion", "eventos_evento"."modificacion", "eventos_evento"."nombre", "eventos_evento"."fecha", "eventos_evento"."hora" FROM "eventos_evento"; args=()
+[2016-11-04 07:05:39] DEBUG [django.template:927] Exception while resolving variable 'hide_label' in template 'rest_framework/horizontal/input.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [hide_label] in "{'base_template': 'input.html', 'input_type': 'text', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0AC5A20>}"
+[2016-11-04 07:05:39] DEBUG [django.template:927] Exception while resolving variable 'placeholder' in template 'rest_framework/horizontal/input.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [placeholder] in "{'base_template': 'input.html', 'input_type': 'text', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0AC5A20>}"
+[2016-11-04 07:05:39] DEBUG [django.template:927] Exception while resolving variable 'hide_label' in template 'rest_framework/horizontal/input.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [hide_label] in "{'base_template': 'input.html', 'input_type': 'date', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0AC5A20>}"
+[2016-11-04 07:05:39] DEBUG [django.template:927] Exception while resolving variable 'placeholder' in template 'rest_framework/horizontal/input.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [placeholder] in "{'base_template': 'input.html', 'input_type': 'date', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0AC5A20>}"
+[2016-11-04 07:05:39] DEBUG [django.template:927] Exception while resolving variable 'hide_label' in template 'rest_framework/horizontal/input.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [hide_label] in "{'base_template': 'input.html', 'input_type': 'time', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0AC5A20>}"
+[2016-11-04 07:05:39] DEBUG [django.template:927] Exception while resolving variable 'placeholder' in template 'rest_framework/horizontal/input.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [placeholder] in "{'base_template': 'input.html', 'input_type': 'time', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0AC5A20>}"
+[2016-11-04 07:06:18] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[2016-11-04 07:06:18] DEBUG [django.db.backends:89] (0.004) INSERT INTO "eventos_evento" ("creacion", "modificacion", "nombre", "fecha", "hora") VALUES ('2016-11-04 12:06:18.216607', '2016-11-04', 'Reunion extraordianaria', '2016-11-24', '04:00:00'); args=['2016-11-04 12:06:18.216607', '2016-11-04', 'Reunion extraordianaria', '2016-11-24', '04:00:00']
+[2016-11-04 07:06:18] DEBUG [django.template:927] Exception while resolving variable 'hide_label' in template 'rest_framework/horizontal/input.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [hide_label] in "{'base_template': 'input.html', 'input_type': 'text', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0B381D0>}"
+[2016-11-04 07:06:18] DEBUG [django.template:927] Exception while resolving variable 'placeholder' in template 'rest_framework/horizontal/input.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [placeholder] in "{'base_template': 'input.html', 'input_type': 'text', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0B381D0>}"
+[2016-11-04 07:06:18] DEBUG [django.template:927] Exception while resolving variable 'hide_label' in template 'rest_framework/horizontal/input.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [hide_label] in "{'base_template': 'input.html', 'input_type': 'date', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0B381D0>}"
+[2016-11-04 07:06:18] DEBUG [django.template:927] Exception while resolving variable 'placeholder' in template 'rest_framework/horizontal/input.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [placeholder] in "{'base_template': 'input.html', 'input_type': 'date', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0B381D0>}"
+[2016-11-04 07:06:18] DEBUG [django.template:927] Exception while resolving variable 'hide_label' in template 'rest_framework/horizontal/input.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [hide_label] in "{'base_template': 'input.html', 'input_type': 'time', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0B381D0>}"
+[2016-11-04 07:06:18] DEBUG [django.template:927] Exception while resolving variable 'placeholder' in template 'rest_framework/horizontal/input.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [placeholder] in "{'base_template': 'input.html', 'input_type': 'time', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0B381D0>}"
+[2016-11-04 07:06:25] DEBUG [django.db.backends:89] (0.001) SELECT "eventos_evento"."id", "eventos_evento"."creacion", "eventos_evento"."modificacion", "eventos_evento"."nombre", "eventos_evento"."fecha", "eventos_evento"."hora" FROM "eventos_evento"; args=()
+[2016-11-04 07:06:25] DEBUG [django.template:927] Exception while resolving variable 'hide_label' in template 'rest_framework/horizontal/input.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [hide_label] in "{'base_template': 'input.html', 'input_type': 'text', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0AD4160>}"
+[2016-11-04 07:06:25] DEBUG [django.template:927] Exception while resolving variable 'placeholder' in template 'rest_framework/horizontal/input.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [placeholder] in "{'base_template': 'input.html', 'input_type': 'text', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0AD4160>}"
+[2016-11-04 07:06:25] DEBUG [django.template:927] Exception while resolving variable 'hide_label' in template 'rest_framework/horizontal/input.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [hide_label] in "{'base_template': 'input.html', 'input_type': 'date', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0AD4160>}"
+[2016-11-04 07:06:25] DEBUG [django.template:927] Exception while resolving variable 'placeholder' in template 'rest_framework/horizontal/input.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [placeholder] in "{'base_template': 'input.html', 'input_type': 'date', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0AD4160>}"
+[2016-11-04 07:06:25] DEBUG [django.template:927] Exception while resolving variable 'hide_label' in template 'rest_framework/horizontal/input.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [hide_label] in "{'base_template': 'input.html', 'input_type': 'time', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0AD4160>}"
+[2016-11-04 07:06:25] DEBUG [django.template:927] Exception while resolving variable 'placeholder' in template 'rest_framework/horizontal/input.html'.
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\taller\initial_ioteca\ve_asociacion\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [placeholder] in "{'base_template': 'input.html', 'input_type': 'time', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x000001E7E0AD4160>}"
