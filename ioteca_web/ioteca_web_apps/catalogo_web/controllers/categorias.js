@@ -19,7 +19,7 @@ app
             $log.log("Error in list:" + JSON.stringify(err));
             toastr.error(err.data.results.detail, err.status + ' ' + err.statusText);
         });
-    };
+     };
     $scope.list(params);
 
     $scope.buscar = function() {

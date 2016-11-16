@@ -16,6 +16,7 @@ class SocioLote(models.Model):
         choices=ESTADO_INMUEBLE_CHOICES, max_length=30, null=True, blank=True)
     observaciones = models.TextField(max_length=500, blank=True, null=True)
     estado = models.BooleanField(default=True)
+    nro_inasistencias = models.IntegerField(default=0)
     # area_lote = models.DecimalField(
     #     null=False, blank=False, decimal_places=2, max_digits=5, default=0.0)
 

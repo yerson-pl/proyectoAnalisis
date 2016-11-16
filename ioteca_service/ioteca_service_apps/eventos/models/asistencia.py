@@ -8,6 +8,7 @@ class Asistencia(TimeStampModel):
     evento = models.ForeignKey(Evento)
     socio_lote = models.ForeignKey(SocioLote)
     dni_representante = models.CharField(max_length=8, null=True, blank=True)
+    estado = models.BooleanField(default=False)
 
     class Meta:
         verbose_name = "Asistencia"

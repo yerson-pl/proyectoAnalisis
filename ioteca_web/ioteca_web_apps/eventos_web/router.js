@@ -25,8 +25,8 @@ app
         // no recupera el foco porque el run se genera después del config
         //router.setUpRoutes();
     })
-    .config(function($stateProvider, $urlRouterProvider, ROUTERS2, routerProvider) {
-        collection = ROUTERS2;
+    .config(function($stateProvider, $urlRouterProvider, ROUTERS3, routerProvider) {
+        collection = ROUTERS3;
         for (var routeName in collection) {
             //if (!$state.get(routeName)) {
             $stateProvider.state(routeName, collection[routeName]); // $stateProvider.state debe generarse aqui para no perder el foco

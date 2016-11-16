@@ -11,8 +11,8 @@ app
 
     .value('configEventos', config);
 
-app.constant('ROUTERS2', {
-    "xxx": {
+app.constant('ROUTERS3', {
+    "xxxx": {
         "url": "/xxx",
         "templateUrl": "templates/xxx.html"
     },
@@ -30,3 +30,34 @@ app.constant('ROUTERS2', {
             }
         }
     },
+      "eventos.eventos": {
+        "url": "/eventos",
+        "template": "<div ui-view ></div>"
+    },
+
+    "eventos.eventos.eventos": {
+        "url": "/list",
+        "data": {
+            "section": "Eventos",
+            "page": "Eventons"
+        },
+        "templateUrl": "ioteca_web_apps/eventos_web/views/eventos/index.html"
+    },
+    "eventos.eventos.eventoNew": {
+        "url": "/new",
+        "data": {
+            "section": "Eventos",
+            "page": "Evento"
+        },
+        "templateUrl": "ioteca_web_apps/eventos_web/views/eventos/form.html"
+    },
+    "eventos.eventos.eventoEdit": {
+        "url": "/eventos/:id/edit",
+        "data": {
+            "section": "Eventos",
+            "page": "Evento"
+        },
+        "templateUrl": "ioteca_web_apps/eventos_web/views/eventos/form.html"
+    },
+
+});

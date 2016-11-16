@@ -5,7 +5,7 @@ app
         return {
             setUpRoutes: function() {
                 $http.get(urlCollection).success(function(collection) {
-                    //console.log('collection::' + JSON.stringify(collection));
+                    console.log('collection::' + JSON.stringify(collection));
                     for (var routeName in collection) {
                         if (!$state.get(routeName)) {
                             $stateProvider.state(routeName, collection[routeName]);

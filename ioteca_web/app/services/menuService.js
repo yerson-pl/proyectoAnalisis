@@ -116,11 +116,11 @@ app
             state: 'eventos.eventos',
             menu_items: [{
                 title: 'Eventos',
-                state: 'eventos.eventos.',
+                state: 'eventos.eventos.eventos',
                 type: 'link'
             }, {
                 title: 'Asistencias',
-                state: '',
+                state: 'eventos.eventos.asistencias',
                 type: 'link'
             }, ]
         }]
