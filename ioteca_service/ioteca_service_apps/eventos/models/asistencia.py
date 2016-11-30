@@ -13,6 +13,10 @@ class Asistencia(TimeStampModel):
     class Meta:
         verbose_name = "Asistencia"
         verbose_name_plural = "Asistencias"
+        permissions = (
+            ('list_asistencia', 'Can list categoria'),
+            ('get_asistencia', 'Can get asistencia'),
+        )
 
     def __str__(self):
         return self.dni_representante

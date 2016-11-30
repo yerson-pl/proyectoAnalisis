@@ -48,6 +48,12 @@
                                 <td> {{ d.fecha }} </td>
                                 <td> {{ d.hora }} </td>
                                 <td>
+                                    <md-button class="md-icon-button md-td" aria-label="Edit" ui-sref="">
+                                        <md-tooltip md-autohide>Asistencia {{ d.codename }}</md-tooltip>
+                                        <ng-md-icon  size="24" icon="edit" aria-label="Edit"></ng-md-icon>
+                                    </md-button>
+                                </td>
+                                <td>
                                     <md-button class="md-icon-button md-td" aria-label="Edit" ui-sref="eventos.eventos.eventoEdit({id:d.id})">
                                         <md-tooltip md-autohide>Edit {{ d.codename }}</md-tooltip>
                                         <ng-md-icon  size="24" icon="edit" aria-label="Edit"></ng-md-icon>

@@ -59,5 +59,18 @@ app.constant('ROUTERS3', {
         },
         "templateUrl": "ioteca_web_apps/eventos_web/views/eventos/form.html"
     },
+      "eventos.eventos.asistencias": {
+        "url": "/asistencias",
+        
+        "templateUrl": "ioteca_web_apps/eventos_web/views/asistencias/index.html"
+    },
+    "eventos.eventos.asistenciaNew": {
+        "url": "/newadd",
+        "data": {
+            "section": "Eventos",
+            "page": "Evento"
+        },
+        "templateUrl": "ioteca_web_apps/eventos_web/views/asistencias/form.html"
+    },
 
 });
